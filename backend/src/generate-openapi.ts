@@ -13,6 +13,6 @@ async function bootstrap() {
     deepScanRoutes: true,
   });
   SwaggerModule.setup('openapi', app, document, {});
-  fs.writeFileSync('./swagger-spec.json', JSON.stringify(document));
+  //fs.writeFileSync('./swagger-spec.json', JSON.stringify(document));
 }
 bootstrap();
