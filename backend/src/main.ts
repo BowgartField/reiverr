@@ -36,8 +36,8 @@ async function bootstrap() {
   const document = SwaggerModule.createDocument(app, config, {
     deepScanRoutes: true,
   });
-  SwaggerModule.setup('openapi', app, document);
-  fs.writeFileSync('./swagger-spec.json', JSON.stringify(document));
+  SwaggerModule.setup('openapi', app, document);  
+  // fs.writeFileSync('./swagger-spec.json', JSON.stringify(document));
 
   await createAdminUser(app.get(UsersService));
 
